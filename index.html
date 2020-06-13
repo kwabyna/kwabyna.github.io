@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Poiret+One|Satisfy&display=swap" rel="stylesheet">
+    <title>Gallery</title>
+     <!-- Bootstrap css link  -->
+     <link rel="stylesheet" href="/css/style.css">
+     <script src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+
+  
+ <!-- main navigation -->
+  <nav class=" navbar fixed-top navbar-light navbar-expand-sm navbar-template sticky-top">
+    <a class="navbar-brand" href="Index.html">FG</a>
+    <div class="d-flex flex-row order-2 order-sm-3">
+        <ul class="navbar-nav flex-row">
+            <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fab fa-facebook"></i></a></li>
+            <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fab fa-twitter"></i></a></li>
+            <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fab fa-youtube"></i></a></li>
+            <li class="nav-item"><a class="nav-link px-2" href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        
+    </div>
+    <div class="collapse navbar-collapse order-3 order-sm-2" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          
+        </ul>
+    </div>
+  </nav>
+
+
+  <!-- fullpage sections start here -->
+
+
+<!-- intro one  -->
+<div class="view" id="intro">
+      <div class="container full-bg-img">
+         <div class="row height align-items-center">
+           <div class="col home">
+                  <h6 class=" weltext welcome display-4 font-weight-bold text-light d-flex justify-content-center">
+                    "Style is a way to say who you are without having to speak."  </h6>
+  
+                  <hr class="hr-light">
+  
+  
+                  <div class="buttons butt d-flex justify-content-center ">
+                      <a href="#" class="btn btn1 t">Gallery</a>
+                      <a href="/pages/profile.html" class="btn btn1 ">Designers</a>
+
+                  </div>
+  
+      </div>
+          </div>        
+              </div>
+</div>
+
+
+<!-- intro two  -->
+    <div class="view" id="intro2">
+        <div class="container2 full-bg-img">
+            <div class="row height align-items-center">
+                <div class="col home">
+                        <!-- <h2 class="text-center,text-light"> Fashion Gallery</h2> -->
+                    <h6 class=" weltext2 welcome display-4 font-weight-bold text-light d-flex justify-content-center">
+                        “Every man should have a magnifying mirror. If you look good magnified, you are set to go” — Tom Ford  </h6>
+        
+                    <hr class="hr-light">
+        
+                    <div class=" buttons butt d-flex justify-content-center" >
+                        <a href="#" class="btn btn1">Men</a>
+        
+                    </div>
+                </div>
+            </div>        
+                </div>
+             
+    </div>
+            
+
+<!-- intro 3  -->
+    <div class="view" id="intro3">
+        <div class="container2 full-bg-img">
+            <div class="row height align-items-center">
+                <div class="col home">
+                        <!-- <h2 class="text-center,text-light"> Fashion Gallery</h2> -->
+                    <h6 class=" weltext2 welcome display-4 font-weight-bold text-light d-flex justify-content-center">
+                        "The dress must follow the body of a woman, not the body following the shape of the dress." —Hubert de Givenchy</h6>
+        
+                    <hr class="hr-light">
+        
+                    <div class=" buttons butt d-flex justify-content-center" >
+                        <a href="#" class="btn btn1">Women</a>
+        
+                    </div>
+                </div>
+            </div>        
+                </div>
+                <footer>
+                    <div class="row fixed justify-content-center fixed-bottom">
+                    <p class="text-center">  Baryeh&copy; 2020</p>
+                    </div>
+                    </footer>
+    </div>
+    
+</body>
+
+<script src="js/scrollreveal.min.js"></script>
+
+<script> 
+  window.sr=ScrollReveal();
+  sr.reveal( '.navbar', {
+      duration: 1200,
+      rotate: 'top',
+      distance:'100px'
+
+  });
+
+  window.sr=ScrollReveal();
+  sr.reveal( '.welcome', {
+      duration: 1000,
+      origin:'top',
+      distance:'300px'
+  });
+
+  window.sr=ScrollReveal();
+  sr.reveal( '.hello', {
+      duration: 1000,
+      origin:'left',
+      distance:'100px'
+  });
+
+  window.sr=ScrollReveal();
+  sr.reveal( '.butt', {
+      duration: 1000,
+      delay:100,
+      origin:'top',
+      distance:'100px'
+  });
+
+  window.sr=ScrollReveal();
+  sr.reveal( '#intro2', {
+      duration: 1000,
+      delay:100,
+      origin:'right',
+      distance:'100px'
+  });
+
+  window.sr=ScrollReveal();
+  sr.reveal( '#intro3', {
+      duration: 1000,
+      delay:100,
+      origin:'left',
+      distance:'100px'
+  });
+
+
+</script>
+
+<script>
+  $(function (){
+//Smooth Scrooling
+      $('[href*="#"]:not([href="#"])').click(function(){
+
+          if(location.pathname.replace(/^\//,'')== this.pathname.replace(/^\//,'') && location.hostname == this.hostname)
+          {
+              var target = $(this.hash);
+              target =target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+
+              if(target.length){
+                  $('html,body').animate({
+                      scrollTop: target.offset().top
+                  },1500);
+                  return false;
+              }
+          }
+      })
+
+  })
+</script> 
+
+
+<!-- Navigation animation -->
+<script>
+  $(document.ready).ready(function(){
+      $('#my-menu').click(function() {
+              $('#my-bs').addClass("animated swing")
+          if($('#my-bs').hasClass('pop-menu')) {
+              $('#my-bs').removeClass('pop-menu').hide();
+          } else {
+              $('#my-bs').addClass('pop-menu').show();
+          }
+      });
+  });
+</script>   
+    
+       <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</html>
