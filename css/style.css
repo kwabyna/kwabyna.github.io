@@ -29,7 +29,7 @@ header,
 
 .btn{
     position: relative;
-    color: grey  !important;
+    color: green  !important;
     font-size: 20px !important;
     font-family: 'Josefin Sans ', sans-serif;
     text-decoration: none;
@@ -43,7 +43,7 @@ header,
 }
 
 .btn::before{
-    background: white  ;
+    background: whitesmoke  ;
     content: "";
     position: absolute;
     top: 50%;
@@ -104,8 +104,8 @@ header,
 
 /* intro three  */
 #intro3{
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/women-s-gray-coat-with-pink-long-sleeved-shirt-seats-on-794063.jpg) no-repeat center  center  fixed; 
-    -webkit-background-size: cover;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/confident-man-putting-on-stylish-hat-4173182.jpg) no-repeat center  center  fixed; 
+    -webkit-background-size: cover;ts-on-794063
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
